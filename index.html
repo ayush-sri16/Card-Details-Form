@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Details Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section-1">
+            <div class="cards">
+
+
+                <div class="front">
+                    <img src="images/bg-card-front.png" alt="">
+                    <div class="card-details">
+                        <div id="dots">
+                            <p class="dot-1"></p>
+                            <p class="dot-2"></p>
+                        </div>
+                        <p id="numbers">XXXX XXXX XXXX XXXX</p>
+                        <div class="details">
+                            <p id="name">Piyxxx Srivxxxxxx</p>
+                            <p><span id="month">00</span>/<span id="year">00</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <img src="images/bg-card-back.png" alt="">
+                    <p id="cvv">000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <form action="#" name="myForm">
+                <p>CARDHOLDER NAME</p>
+                <input type="text" style="color: hsl(278, 68%, 11%); font-family: 'Space Grotesk', sans-serif;"
+                    name="fname" placeholder="e.g Ayush Srivastava">
+                <div id="message-1"></div>
+
+
+                <p>CARD NUMBER</p>
+                <input type="text" style="text-transform: uppercase; letter-spacing: 2px;" name="cnumber" maxlength="16"
+                    placeholder="e.g 1234 5678 9123 0000">
+                <div id="message-2"></div>
+
+
+                <p>EXP.DATE (MM/YY) <span>CVV</span></p>
+                <div class="date">
+                    <div class="month">
+                        <input name="month" maxlength="2" type="text" placeholder="MM">
+                        <div id="message-3"></div>
+                    </div>
+
+                    <input name="year" maxlength="2" type="text" placeholder="YY">
+
+                    <div class="cvv">
+                        <input name="cvv" maxlength="3" type="text" id="input" placeholder="e.g. 123">
+                        <div id="message-4"></div>
+                    </div>
+                </div>
+
+                <button id="btn" type="submit" name="submit">Confirm</button>
+            </form>
+
+            <div class="thank-you-container">
+                <div class="thank-you hidden">
+                    <img src="images/icon-complete.svg" alt="">
+                    <h1>THANK YOU!</h1>
+                    <P>We've added your card details</P>
+                    <button id="btn-2" type="button">Continue</button>
+                </div>
+            </div>
+            <h3>Made By- Ayush Srivastava</h3>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+
+</html>

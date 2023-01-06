@@ -1,0 +1,263 @@
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-family: 'Space Grotesk';
+    background: url("images/bg-main-desktop.png") no-repeat;
+}
+
+.container{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.back{
+    position: relative;
+    width: 80%;
+    transform: translateX(-30px);
+ }
+ .back img{
+    width: 100%;
+ }
+
+#cvv{
+     position: absolute; 
+    color: white;
+    top: 35%;
+    left: 75%;
+}
+
+.front{
+    position: relative;
+    transform: translate(-100px,-30px);
+    width: 80%;
+ }
+
+ .front img{
+    width: 100%;
+ }
+
+#dots{
+    display: flex;
+    align-items: center;
+    margin-top: -30px;
+    transform: translateY(-20%);
+}
+
+.dot-1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: white;
+}
+
+.dot-2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.card-details{
+    position: absolute;
+    top: 25%; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    transform:translateX(15px) ;
+    font-size: 14px;
+}
+
+.details{
+    display: flex; 
+    align-items: center;
+    color: white;
+    transform: translateY(-10px);
+ }
+
+ .details p{
+    transform: translateX(10px);
+ }
+
+ .details p:first-child{
+    transform: none;
+ }
+
+#name{
+    text-transform: uppercase;
+}
+
+#year{
+    margin-left: -1px;
+}
+
+#numbers{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing:2px;
+    transform: none;
+}
+
+
+/* #########second section####### */
+form p{
+    color:hsl(278, 68%, 11%) ;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+input{
+    padding: 10px 25px;
+    width: 270px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:focus{
+    background: white;
+    border-color: hsl(278, 68%, 11%);
+}
+
+.date{
+    display: flex; 
+}
+
+.date input{
+    padding: 10px;
+    width: 55px;
+    margin-right: 5px;
+    height: 20px;
+}
+
+#input{
+    width: 110px;
+    margin-left: 20px;
+}
+
+span{
+    margin-left: 40px;
+}
+
+::placeholder{
+    font-size: 16px;
+    color:hsl(270, 3%, 87%) ;
+    font-weight: 500;
+}
+
+#message-3{
+    color:hsl(0, 100%, 66%) ;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 10px;
+}
+
+#message-1{
+    color:hsl(0, 100%, 66%) ;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#message-2{
+color:hsl(0, 100%, 66%) ;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#message-4{
+    color:hsl(0, 100%, 66%) ;
+        font-family: 'Space Grotesk', sans-serif;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+#btn,#btn-2{
+    padding: 10px ;
+    width: 327px;
+    color: white;
+    background: hsl(278, 68%, 11%);
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.thank-you h1{
+    color: hsl(278, 68%, 11%);
+    font-weight: 500;
+}
+
+.thank-you p{
+    color: hsl(279, 6%, 55%);
+}
+h3{
+    /* text-align: center; */
+    text-shadow: 2px 2px 4px gray;
+    border-bottom: 4px solid black;
+    width: fit-content;
+}
+
+@media screen and (max-width:768px){
+    body{
+        height: initial;
+        background: url("images/bg-main-mobile.png") no-repeat;
+        background-position-x:center ; 
+        background-size: calc(100% + 80px);
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .front{
+        width: 90%;
+        margin: 0 auto;
+        transform: translate(-10%,60%);
+        z-index: 11111;
+    }
+
+    .back{
+        width: 85%;
+        margin: 0 auto;
+        transform: translate(10%,-105%);
+    }
+
+    #cvv{
+        top: 33%;
+    }
+
+    .card-details{
+        transform:none ;
+            margin-left: 15%;
+            transform:translateX(px) ;
+    }
+
+    #numbers{
+        margin-top: -1px;
+    }
+
+    .details{
+        margin-top: -15px;
+        transform: translateY(-10%);
+    }
+}
